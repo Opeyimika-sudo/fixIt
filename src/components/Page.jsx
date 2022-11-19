@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import Blog from '../pages/Blog'
+import Blog_see_all from '../pages/Blog--see-all'
 import arrow_right from '../icons/arrow-right.png'
 import arrow_left from '../icons/arrow-left.png'
 
@@ -9,6 +9,7 @@ const ButtonSection = styled.div`
     display: flex;
     gap: 10px;
     justify-content: center;
+    margin-bottom: 30px;
 `
 const StyledButton = styled.button`
     border: 1px solid #233BA9;

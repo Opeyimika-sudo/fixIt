@@ -1,13 +1,11 @@
 import React from 'react'
-import Blog from '../pages/Blog'
+import Blog_see_all from '../pages/Blog--see-all'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-// let browserWidth = window.innerWidth;
-
 const StyledPost = styled.section`
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+    border-radius: 8px;
     flex: 1 1 30%;
 `
 

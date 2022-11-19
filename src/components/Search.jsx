@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import search from '../icons/search.png'
-import Blog from '../pages/Blog'
+import Blog_see_all from '../pages/Blog--see-all'
 
 const StyledForm = styled.form`
     border: 1px solid #E4E4E5;
@@ -10,10 +10,11 @@ const StyledForm = styled.form`
     width: 40%;
     margin: 30px auto;
     padding: 10px auto;
-`
 
-const MobileForm = styled(StyledForm)`
-    width: 60%;
+    @media screen and (max-width: 768px) {
+        width: 60%;
+        font-size: 18px;
+    }
 `
 
 const StyledInput = styled.input`
@@ -36,17 +37,10 @@ function Search({ display }) {
     console.log(display);
   return (
     <>
-    { display == false ?
-        <MobileForm>
-            <StyledImg src={search} alt="" />
-            <StyledInput type="text" placeholder="Search for anything..."/>
-        </MobileForm>
-        :
         <StyledForm>
             <StyledImg src={search} alt="" />   
             <StyledInput type="text" placeholder="Search for anything..."/>
         </StyledForm>
-    }
     </>
   )
 }
